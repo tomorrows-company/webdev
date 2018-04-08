@@ -1,0 +1,79 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Registration Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  <script src="main.js"></script>
+</head>
+<body>
+  <h1>Register</h1>
+  <form>
+    <div>
+     <label for = "fname">First Name:</label>
+      <input type = "text" name = "first_name" id = "fname" placeholder = "First Name" required>
+    </label>
+
+      <label for = "lname">Last Name:</label>
+      <input type = "text" name = "last_name" id = "lname" placeholder = "Last Name" required>
+      </label>     
+    </div>
+
+    <div>
+      <label for = "male">Male</label>
+      <input type = "radio" name = "gender" id = "male" value = "male">    
+      </label>
+
+      <label for = "female">Female</label>
+      <input type = "radio" name = "gender" id = "female" value = "female">    
+      </label>
+
+      <label for = "other">Other</label>
+      <input type = "radio" name = "gender" id = "other" value = "other"> 
+      </label>
+    </div>
+ 
+    <div>
+      <label for = "email">Email:</label>
+      <input type = "email" name = "email" id = "email" placeholder = "your email address" required>
+      </label>
+   
+      <label for = "password">Password:</label>
+      <input type = "password" name = "password" id = "password" pattern =".{5,10}" required title = "5 to 10 characters " >
+      </label>
+    </div>
+
+    <div><label for = "birthday">Birthday:
+        <select id = "birthday" name = "Month">
+            <option value = "January">January</option>
+            <option value = "February">Februry</option>
+            <option value ="March">March</option>
+        </select>
+        <select id = "birthday" name = "Day">
+            <option value = "1">1</option>
+            <option value = "2">2</option>
+            <option value ="3">3</option>
+        </select>
+        <select id = "birthday" name = "Year">
+            <option value = "2014">2014</option>
+            <option value = "2015">2015</option>
+            <option value ="2016">2016</option>
+        </select>
+      </label>
+    </div>
+
+    <div>
+        <label for = "terms">I agree to the the terms and conditions </label>
+        <input type = "checkbox" name = "terms" id = "terms">
+        </label>
+    </div>
+
+    <div>
+      <input type = "submit">
+    </div>
+
+  </form>
+</body>
+</html>
